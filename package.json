@@ -1,0 +1,11 @@
+{
+  "name": "killport",
+  "version": "1.0.0",
+  "description": "kill whatever's running on a port — zero deps",
+  "type": "module",
+  "bin": { "killport": "./cli.js" },
+  "scripts": { "test": "node --test tests/test.mjs" },
+  "keywords": ["kill", "port", "process", "cli", "lsof"],
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}
