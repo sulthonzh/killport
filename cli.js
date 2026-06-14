@@ -140,7 +140,6 @@ function formatResult(procs, port, json) {
   return arr.map(p => `port ${port} → pid ${p.pid} (${p.name})`).join('\n');
 }
 
-// Main
 const opts = parseArgs(process.argv.slice(2));
 
 if (opts.scan) {
@@ -169,7 +168,6 @@ if (opts.list) {
   process.exit(0);
 }
 
-// Kill
 const arr = Array.isArray(procs) ? procs : [procs];
 let killed = 0;
 for (const p of arr) {
