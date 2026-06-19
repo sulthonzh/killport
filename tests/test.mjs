@@ -4,7 +4,7 @@ import { execSync } from 'node:child_process';
 
 const run = (args) => {
   try {
-    const out = execSync(`node /tmp/killport/cli.js ${args}`, { encoding: 'utf8', stdio: ['pipe','pipe','pipe'] });
+    const out = execSync(`node ${new URL('../cli.js', import.meta.url).pathname} ${args}`, { encoding: 'utf8', stdio: ['pipe','pipe','pipe'] });
     return { code: 0, out: out.trim() };
   } catch (e) { return { code: e.status, out: (e.stdout || '').trim(), err: (e.stderr || '').trim() }; }
 };
