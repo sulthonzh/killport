@@ -1,5 +1,5 @@
 {
-  "name": "killport",
+  "name": "@sulthonzh/killport",
   "version": "1.0.0",
   "description": "kill whatever's running on a port — zero deps",
   "type": "module",
@@ -20,6 +20,9 @@
   "license": "MIT",
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "cli.js",

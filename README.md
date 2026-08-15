@@ -16,7 +16,7 @@ Every dev has been here — you start a server and get "port already in use". Yo
 ## Install
 
 ```bash
-npm install -g killport
+npm install -g @sulthonzh/killport
 ```
 
 Or just use it once:
